@@ -1097,7 +1097,7 @@ $$ LANGUAGE 'plpgsql';
 
 ## TEMP TABLE 
 
-![image](https://github.com/user-attachments/assets/cbf8b812-9833-4ff0-ba25-4b5439fdb299)
+![image](temp_table.png)
 
 ```sql
 CREATE OR REPLACE PROCEDURE listar_amigos_secretos(evento_id_param INTEGER)
