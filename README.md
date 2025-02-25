@@ -7,7 +7,7 @@
 [README.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/README.md) <br>
 [temp_table.png](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/temp_table.png) <br>
 ## [./slides_importantes](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./slides_importantes) <br>
-[2introducao-er.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./slides_importantes/2introducao-er.pdf) <br>
+[introducao-er.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./slides_importantes/introducao-er.pdf) <br>
 [psql.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./slides_importantes/psql.pdf) <br>
 [sql1.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./slides_importantes/sql1.pdf) <br>
 [sql2.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./slides_importantes/sql2.pdf) <br>
