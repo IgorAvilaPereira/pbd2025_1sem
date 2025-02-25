@@ -6,3 +6,5 @@
 ## [./dicas](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./dicas) <br>
 [README.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/README.md) <br>
 [temp_table.png](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/temp_table.png) <br>
+## [./videos](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./videos) <br>
+[README.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./videos/README.md) <br>
