@@ -20,7 +20,7 @@ for d in ./*; do
 
 		# documentos do subdiretorio de cada aula
 		for d2 in *.*; do
-		    if [[ "$d" != "./README.md" && "$d" != "./atualizar.sh" && "$d" != "./nova_aula.sh" ]]; then
+		    if [[ "$d" != "README.md" ]]; then
     			echo "[$d2](https://github.com/IgorAvilaPereira/"$repositorio"/blob/main/$d/$d2) <br>" >> "./../README.md"		
     			# se n tiver wiki, favor comentar
     			echo "[$d2](https://github.com/IgorAvilaPereira/"$repositorio"/blob/main/$d/$d2) <br>" >> "./../../"$repositorio".wiki/Home.md"					
