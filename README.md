@@ -1,8 +1,6 @@
 # pbd2025_1sem <br>
 ## [./1_introducao](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./1_introducao) <br>
-# Introdução - 23/02
-
-* [stored_procedure.pdf](stored_procedure.pdf)
+[introducao.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./1_introducao/introducao.md) <br>
 [stored_procedure.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./1_introducao/stored_procedure.pdf) <br>
 [teste.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./1_introducao/teste.sql) <br>
 ## [./dicas](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./dicas) <br>
