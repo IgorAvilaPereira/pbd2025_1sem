@@ -6,6 +6,8 @@
 ## [./dicas](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./dicas) <br>
 [dicas.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/dicas.md) <br>
 [temp_table.png](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/temp_table.png) <br>
+## [./listas](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./listas) <br>
+[lista1.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./listas/lista1.md) <br>
 ## [./slides_importantes](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./slides_importantes) <br>
 [introducao-er.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./slides_importantes/introducao-er.pdf) <br>
 [psql.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./slides_importantes/psql.pdf) <br>
