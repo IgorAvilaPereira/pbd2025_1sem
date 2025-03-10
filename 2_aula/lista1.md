@@ -7,9 +7,9 @@ Vamos supor que temos uma tabela chamada `funcionarios` com a seguinte estrutura
 CREATE TABLE funcionarios (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(100),
-    idade INT,
+    data_nascimento date,
     departamento VARCHAR(50),
-    salario DECIMAL(10, 2)
+    salario numeric(10, 2)
 );
 ```
 
