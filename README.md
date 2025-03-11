@@ -7,6 +7,7 @@
 [lista1.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./2_aula/lista1.md) <br>
 [lista1.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./2_aula/lista1.sql) <br>
 &nbsp; 
+[setup.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./2_aula/setup.md) <br>
 [david_carnaval](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./2_aula/david_carnaval) <br>
 ## [./dicas](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./dicas) <br>
 [dicas.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/dicas.md) <br>
