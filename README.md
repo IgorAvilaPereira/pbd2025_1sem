@@ -11,6 +11,7 @@
 [david_carnaval](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./2_aula/david_carnaval) <br>
 ## [./3_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./3_aula) <br>
 * continuar lista 1
+[javalin_mustache_exemplo](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./3_aula/javalin_mustache_exemplo) <br>
 ## [./dicas](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./dicas) <br>
 [dicas.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/dicas.md) <br>
 [temp_table.png](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/temp_table.png) <br>
