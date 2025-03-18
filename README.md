@@ -4,6 +4,7 @@
 [stored_procedure.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./1_introducao/stored_procedure.pdf) <br>
 [teste.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./1_introducao/teste.sql) <br>
 ## [./2_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./2_aula) <br>
+[lista1_170325.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./2_aula/lista1_170325.sql) <br>
 [lista1.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./2_aula/lista1.md) <br>
 [lista1.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./2_aula/lista1.sql) <br>
 &nbsp; 
