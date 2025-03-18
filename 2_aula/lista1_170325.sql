@@ -82,13 +82,13 @@ select soma_salarios();
 
 drop function listar_todos;
 -- 10. Crie uma stored procedure que liste todos os funcionários de um determinado departamento.
-CREATE OR REPLACE FUNCTION listar_todos() RETURNS TABLE (nome_aux varchar) AS
+CREATE OR REPLACE FUNCTION listar_todos(departamento_aux text) RETURNS TABLE (nome_aux varchar) AS
 $$
 BEGIN	
-	RETURN QUERY SELECT nome FROM funcionarios;
+	RETURN QUERY SELECT nome FROM funcionarios where departamento = departamento_aux;
 END;
 $$ LANGUAGE 'plpgsql';
 
-select * from listar_todos();
+select * from listar_todos('rh');
 
 
