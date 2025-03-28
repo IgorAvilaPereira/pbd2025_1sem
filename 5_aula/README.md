@@ -1,6 +1,14 @@
-Apresentar o trabalho
+* Terminar a lista
+* 
+* Divulgação TRABALHO 1 -> Data e Peso estão no SIGAA
 
-Terminar a lista (>= 16)
+Na volta:
+
+* Aulão de Revisão
+* fazer a atividade avaliada do 1 bim.
+* E começar 2º bim: trigger
+
+***
 
 <!--
 16. Crie uma stored procedure que aplique um bônus salarial de acordo com a idade.
