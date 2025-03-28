@@ -18,6 +18,18 @@
 [lista1_240324.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./4_aula/lista1_240324.sql) <br>
 Fazer exercícios lista 1 (do 10 em diante)
 ## [./5_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./5_aula) <br>
+Apresentar o trabalho
+
+Terminar a lista (>= 16)
+
+<!--
+16. Crie uma stored procedure que aplique um bônus salarial de acordo com a idade.
+17. Crie uma function que retorne a quantidade total de funcionários na tabela.
+18. Crie uma procedure que atualize o salário de todos os funcionários em 10%.
+19. Crie uma function que retorne o maior salário entre todos os funcionários.
+20. Crie uma stored procedure que delete todos os funcionários de um determinado departamento.
+-->
+
 &nbsp;
 ## [./dicas](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./dicas) <br>
 [dicas.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/dicas.md) <br>
