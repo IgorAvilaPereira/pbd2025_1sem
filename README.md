@@ -27,9 +27,10 @@ Na volta:
 * Fazer a atividade avaliada do 1 bim.
 * E começar 2º bim: trigger
 
+<!--
 ***
 
-<!--
+
 16. Crie uma stored procedure que aplique um bônus salarial de acordo com a idade.
 17. Crie uma function que retorne a quantidade total de funcionários na tabela.
 18. Crie uma procedure que atualize o salário de todos os funcionários em 10%.
