@@ -1,4 +1,4 @@
-* Terminar a lista (>=16)
+* Terminar [Lista 1 (>=16)](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/2_aula/lista1.md)
 * Divulgação TRABALHO 1 -> Data e Peso estão no SIGAA
 
 Na volta:
