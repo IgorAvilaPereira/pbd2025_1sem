@@ -18,14 +18,13 @@
 [lista1_240324.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./4_aula/lista1_240324.sql) <br>
 Fazer exercícios lista 1 (do 10 em diante)
 ## [./5_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./5_aula) <br>
-* Terminar a lista
-* 
+* Terminar a lista (>=16)
 * Divulgação TRABALHO 1 -> Data e Peso estão no SIGAA
 
 Na volta:
 
 * Aulão de Revisão
-* fazer a atividade avaliada do 1 bim.
+* Fazer a atividade avaliada do 1 bim.
 * E começar 2º bim: trigger
 
 ***
