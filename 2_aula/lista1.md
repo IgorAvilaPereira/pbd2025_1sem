@@ -91,4 +91,30 @@ CREATE TABLE funcionarios (
 
 #### 20. Crie uma stored procedure que delete todos os funcionários de um determinado departamento.
 
+## Extra
+
+
+```sql
+CREATE TABLE projetos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    descricao VARCHAR(200),
+    data_inicio DATE,
+    data_fim DATE
+);
+
+CREATE TABLE funcionarios_projetos (
+    id SERIAL PRIMARY KEY,
+    funcionario_id INTEGER NOT NULL,
+    projeto_id INTEGER NOT NULL,
+    FOREIGN KEY (funcionario_id) REFERENCES funcionarios(id),
+    FOREIGN KEY (projeto_id) REFERENCES projetos(id)
+);
+```
+* Selecionar funcionários que trabalham um projeto específico
+* Selecionar funcionários que nunca trabalharam em um projeto
+* Selecionar projetos deste mês corrente
+* Retornar a quantidade de projetos de cada ano
+* Funcionários e a quantidade de projetos que trabalhou
+* Funcionários que estão trabalhando este mês
 

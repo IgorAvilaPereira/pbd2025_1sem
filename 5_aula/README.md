@@ -1,11 +1,10 @@
-* Terminar a lista
-* 
+* Terminar a lista (>=16)
 * Divulgação TRABALHO 1 -> Data e Peso estão no SIGAA
 
 Na volta:
 
 * Aulão de Revisão
-* fazer a atividade avaliada do 1 bim.
+* Fazer a atividade avaliada do 1 bim.
 * E começar 2º bim: trigger
 
 ***
