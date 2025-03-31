@@ -21,6 +21,10 @@ Fazer exercícios lista 1 (do 10 em diante)
 * Terminar [Lista 1 (>=16)](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/2_aula/lista1.md)
 * Divulgação TRABALHO 1 -> Data e Peso estão no SIGAA
 
+Semana Quem vem:
+
+* Extras + Atendimento Trabalho
+
 Na volta:
 
 * Aulão de Revisão
