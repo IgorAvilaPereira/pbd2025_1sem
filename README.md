@@ -18,6 +18,7 @@
 [lista1_240324.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./4_aula/lista1_240324.sql) <br>
 Fazer exercícios lista 1 (do 10 em diante)
 ## [./5_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./5_aula) <br>
+[lista1_310325.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./5_aula/lista1_310325.sql) <br>
 * Terminar [Lista 1 (>=16)](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/2_aula/lista1.md)
 * Divulgação TRABALHO 1 -> Data e Peso estão no SIGAA
 
