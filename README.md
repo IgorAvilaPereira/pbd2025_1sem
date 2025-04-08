@@ -45,6 +45,7 @@ Na volta:
 
 &nbsp;
 ## [./6_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./6_aula) <br>
+[material_aula.zip](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./6_aula/material_aula.zip) <br>
 Extras + Atendimento Trabalho
 
 &nbsp;
