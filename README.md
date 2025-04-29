@@ -50,6 +50,8 @@ Extras + Atendimento Trabalho
 
 &nbsp;
 ## [./7_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./7_aula) <br>
+[aula7.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./7_aula/aula7.sql) <br>
+[index.py](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./7_aula/index.py) <br>
 
 * [PostgreSQL - Como Programar - DesCOMPlica, Oliba!](https://www.youtube.com/playlist?list=PLHCyLhqWSaHDHOCJycIf4FHSU6-IMCxuN)
 
