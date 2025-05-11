@@ -79,6 +79,29 @@ Extras + Atendimento Trabalho
 
      * [(Aula 10) - Triggers (Gatilhos) em Detalhes em PostgreSQL - Com Exemplos e Implementação](https://www.youtube.com/watch?v=f-gTevkp7sg&list=PLHCyLhqWSaHDHOCJycIf4FHSU6-IMCxuN&index=29)
 [trigger.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./7_aula/trigger.pdf) <br>
+## [./8_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./8_aula) <br>
+[0_introducao_python.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/0_introducao_python.pdf) <br>
+[1_flask_python.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/1_flask_python.pdf) <br>
+[2_flask_python.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/2_flask_python.pdf) <br>
+### Playlists
+
+* [Todos os vídeos](https://youtube.com/playlist?list=PLvT8P1q6jMWeVihLzRF3Do1gfGKL8xOtZ)
+
+* [Psycopg](https://youtube.com/playlist?list=PLvT8P1q6jMWc0e1WirbTG-2dWkzbrF4lV)
+
+* [Psycopg + Flask](https://youtube.com/playlist?list=PLvT8P1q6jMWdfi2Od79tZ2zLdS5DTiwVU)
+
+* [Orientação a Objetos com Python (Modo Express)](https://youtube.com/playlist?list=PLvT8P1q6jMWfibTv2uxyDSrMCmjxhXcRz)
+
+* [Trabalhando com Arquivo de Texto em Python](https://youtube.com/playlist?list=PLvT8P1q6jMWdw_9EW4JK36NUDqz4U-uKt)
+
+* [Flask-SQLAlchemy](https://youtube.com/playlist?list=PLvT8P1q6jMWfU2XuNBcA-81TE-CaBEM4n)
+
+* [Flask-Extensions](https://youtube.com/playlist?list=PLvT8P1q6jMWe2c2T0R3RthPyQELWWJtcz)
+
+* [Python/Tkinter](https://youtube.com/playlist?list=PLvT8P1q6jMWfdjqCvnHsTCKxofVBNBZyD)
+
+
 ## [./dicas](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./dicas) <br>
 [dicas.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/dicas.md) <br>
 [temp_table.png](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/temp_table.png) <br>
