@@ -1,4 +1,4 @@
-Com certeza! Com base na estrutura do seu banco de dados `aula7`, preparei 10 exercícios que envolvem a criação e utilização de functions e triggers. Estes exercícios visam cobrir diferentes aspectos dessas funcionalidades no PostgreSQL.
+### Lista 2
 
 **Exercícios com Functions:**
 
@@ -33,5 +33,3 @@ Com certeza! Com base na estrutura do seu banco de dados `aula7`, preparei 10 ex
 14. **Trigger para Calcular a Idade do Paciente (Coluna Virtual):** Crie uma função chamada `calcular_idade` que recebe a data de nascimento e retorna a idade em anos. Em seguida, crie uma VIEW chamada `vw_pacientes_idade` que inclua todas as colunas da tabela `paciente` e adicione uma coluna chamada `idade` que seja calculada utilizando a função `calcular_idade` com a `data_nascimento`. Embora este não seja um trigger tradicional que modifica dados, ele demonstra como podemos usar functions para criar informações dinâmicas baseadas nos dados da tabela.
 
 15. **Trigger para Impedir CPF Duplicado (Tratamento de Erro Personalizado):** Embora a constraint `UNIQUE` já impeça CPFs duplicados, podemos criar um trigger `BEFORE INSERT OR UPDATE` na tabela `paciente` que verifique se o CPF já existe. Se existir, em vez de gerar um erro padrão do banco de dados, o trigger pode usar a função `RAISE EXCEPTION` para retornar uma mensagem de erro mais amigável e específica para o usuário.
-
-Estes exercícios exploram auditoria de dados, histórico de alterações, simulação de ações externas e tratamento personalizado de erros. Espero que sejam desafiadores e educativos! Se precisar de mais algum exercício ou ajuda com a implementação, me diga. 😊
