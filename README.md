@@ -83,6 +83,7 @@ Extras + Atendimento Trabalho
 [0_introducao_python.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/0_introducao_python.pdf) <br>
 [1_flask_python.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/1_flask_python.pdf) <br>
 [2_flask_python.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/2_flask_python.pdf) <br>
+[lista_trigger_and_functions.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/lista_trigger_and_functions.md) <br>
 ### Playlists
 
 * [Todos os vídeos](https://youtube.com/playlist?list=PLvT8P1q6jMWeVihLzRF3Do1gfGKL8xOtZ)
