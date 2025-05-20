@@ -80,9 +80,8 @@ Extras + Atendimento Trabalho
      * [(Aula 10) - Triggers (Gatilhos) em Detalhes em PostgreSQL - Com Exemplos e Implementação](https://www.youtube.com/watch?v=f-gTevkp7sg&list=PLHCyLhqWSaHDHOCJycIf4FHSU6-IMCxuN&index=29)
 [trigger.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./7_aula/trigger.pdf) <br>
 ## [./8_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./8_aula) <br>
-[0_introducao_python.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/0_introducao_python.pdf) <br>
-[1_flask_python.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/1_flask_python.pdf) <br>
-[2_flask_python.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/2_flask_python.pdf) <br>
+[aula7.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/aula7.sql) <br>
+[index.py](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/index.py) <br>
 [lista_trigger_and_functions.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/lista_trigger_and_functions.md) <br>
 ### Playlists
 
@@ -103,6 +102,9 @@ Extras + Atendimento Trabalho
 * [Python/Tkinter](https://youtube.com/playlist?list=PLvT8P1q6jMWfdjqCvnHsTCKxofVBNBZyD)
 
 
+[materiais](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/materiais) <br>
+[__pycache__](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/__pycache__) <br>
+[templates](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/templates) <br>
 ## [./dicas](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./dicas) <br>
 [dicas.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/dicas.md) <br>
 [temp_table.png](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/temp_table.png) <br>
