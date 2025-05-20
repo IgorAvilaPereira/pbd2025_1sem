@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Médicos</h1>
+
+    <table border="1">
+        <tr>
+            <td>Deletar</td>
+            <td>ID</td>
+            <td>CRM</td>
+            <td>Nome</td>
+        </tr>
+        {% for medico in vetMedico %}
+        <tr>
+            <td><a href="/deletar_medico/{{medico.id}}">Deletar</a></td>
+            <td>{{ medico.id }}</td>
+            <td>{{ medico.nome }}</td>
+            <td>{{ medico.crm }}</td>
+        </tr>
+        {% endfor %}
+        </tr>
+    </table>
+</body>
+<a href="/medico_tela_adicionar">Adicionar</a>
+
+</html>
