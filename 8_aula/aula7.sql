@@ -61,6 +61,20 @@ BEGIN
 END;
 $$ LANGUAGE 'plpgsql';
 
+CREATE OR REPLACE FUNCTION deletar_consulta() RETURNS TRIGGER AS
+$$
+DECLARE
+    medico_aux TEXT;
+BEGIN
+    SELECT nome FROM medico WHERE id = OLD.medico_id INTO medico_aux;
+    INSERT INTO consulta_log (data_hora, medico_nome) VALUES (OLD.data_hora, medico_aux);
+    RETURN OLD;
+END;
+$$ LANGUAGE 'plpgsql';
+
+CREATE TRIGGER deletar_consulta_gatilho AFTER DELETE ON consulta FOR EACH 
+ROW EXECUTE PROCEDURE deletar_consulta();
+
 CREATE OR REPLACE FUNCTION adicionar_medico() RETURNS TRIGGER AS
 $$
 BEGIN
@@ -68,6 +82,26 @@ BEGIN
     RETURN NEW;
 END;
 $$ LANGUAGE 'plpgsql';
+
+
+
+CREATE OR REPLACE FUNCTION impedir_agendamentos_finais_de_semana() RETURNS TRIGGER AS
+$$
+DECLARE
+    dia_da_semana integer;
+BEGIN
+    SELECT EXTRACT(dow from NEW.data_hora) INTO dia_da_semana;
+    IF (dia_da_semana = 0 OR dia_da_semana = 6) THEN
+        RAISE EXCEPTION 'Não pode agendar no final de semana';
+        -- RETURN OLD;
+    END IF;
+    RETURN NEW;
+END;
+$$ LANGUAGE 'plpgsql';
+
+
+CREATE TRIGGER impedir_agendamentos_finais_de_semana_gatilho BEFORE INSERT OR UPDATE ON consulta FOR EACH 
+ROW EXECUTE PROCEDURE impedir_agendamentos_finais_de_semana();
 
 CREATE TRIGGER teste_gatilho AFTER INSERT ON consulta FOR EACH 
 ROW EXECUTE PROCEDURE teste();
