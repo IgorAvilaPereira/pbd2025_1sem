@@ -83,7 +83,13 @@ Extras + Atendimento Trabalho
 [aula7.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/aula7.sql) <br>
 [index.py](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/index.py) <br>
 [lista_trigger_and_functions.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/lista_trigger_and_functions.md) <br>
-### Playlists
+### Triggers
+
+* INSTEAD OF: "em vez de...  "
+* for each row: eventos executados por linha
+* for each statement: eventos serão executados como uma grande transação única
+
+### Playlists Python/Flask/Psycopg
 
 * [Todos os vídeos](https://youtube.com/playlist?list=PLvT8P1q6jMWeVihLzRF3Do1gfGKL8xOtZ)
 
