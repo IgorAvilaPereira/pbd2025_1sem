@@ -1,4 +1,10 @@
-### Playlists
+### Triggers
+
+* INSTEAD OF: "em vez de...  "
+* for each row: eventos executados por linha
+* for each statement: eventos serão executados como uma grande transação única
+
+### Playlists Python/Flask/Psycopg
 
 * [Todos os vídeos](https://youtube.com/playlist?list=PLvT8P1q6jMWeVihLzRF3Do1gfGKL8xOtZ)
 
