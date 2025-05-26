@@ -124,6 +124,118 @@ Continuar lista
 [transformacao-er-modelo-relacional.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./slides_importantes/transformacao-er-modelo-relacional.pdf) <br>
 [trigger.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./slides_importantes/trigger.pdf) <br>
 ## [./trabalhos](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./trabalhos) <br>
+### Trabalho 2
+
+## 🧾 Projeto: **Sistema Web de Gestão de Pedidos para Restaurante**
+
+
+
+### 🔧 Tecnologias Utilizadas:
+
+* **Python Flask**: Backend da aplicação.
+* **psycopg**: Integração com PostgreSQL.
+* **PostgreSQL**: Banco de dados com lógica em stored procedures, funções e triggers.
+* **Jinja2**: Templates HTML dinâmicos.
+
+---
+
+### 🎯 Objetivo:
+
+Construir uma aplicação web para gestão de pedidos de um restaurante, onde o backend serve páginas HTML renderizadas com Jinja2, e toda a lógica de negócios, controle de fluxo e consistência de dados é feita diretamente no banco de dados com funções, stored procedures e triggers.
+
+---
+
+### 🧩 Componentes do Projeto:
+
+#### 1. **Frontend com Jinja2 Templates**
+
+Todas as páginas são renderizadas no servidor:
+
+* `cardapio.html`
+* `novo_pedido.html`
+* `painel_admin.html`
+* `detalhes_pedido.html`
+
+```html
+{% for pedido in pedidos %}
+  <tr>
+    <td>{{ pedido.id }}</td>
+    <td>{{ pedido.cliente_nome }}</td>
+    <td>{{ pedido.status }}</td>
+  </tr>
+{% endfor %}
+```
+
+---
+
+### 🗃️ Estrutura do Banco de Dados
+
+#### **Tabelas:**
+
+* `usuarios`
+* `itens_cardapio`
+* `pedidos`
+* `itens_pedido`
+* `estoque`
+* `logs`
+* `status_pedido`
+
+---
+
+### ⚙️ Funções e Stored Procedures
+
+#### ✅ `registrar_pedido(cliente_id, itens[])`
+
+Cria um novo pedido com múltiplos itens. Valida estoque e grava o total.
+
+#### ✅ `calcular_total_pedido(pedido_id)`
+
+Retorna a soma do valor dos itens de um pedido.
+
+#### ✅ `listar_pedidos(status TEXT)`
+
+Retorna todos os pedidos com o status informado (ex: ‘em preparo’).
+
+#### ✅ `trocar_status_pedido(pedido_id, novo_status)`
+
+Altera o status de um pedido validando as transições permitidas.
+
+---
+
+### ⚡ Triggers e Funções de Apoio
+
+#### 🔹 1. Trigger: **Log de alterações em pedidos**
+
+---
+
+#### 🔹 2. Trigger: **Verificação de estoque antes de inserir item**
+
+---
+
+
+#### 🔹 3. Trigger: **Atualização automática de estoque**
+
+---
+
+#### 🔹 4. Trigger: **Validação de transição de status**
+
+---
+
+#### 🔹 5. Trigger: **Gerar log automático de cancelamento**
+
+---
+
+### 🧪 Fluxo do Sistema:
+
+1. O cliente acessa o sistema via interface web.
+2. Escolhe itens do cardápio e registra um novo pedido.
+3. O backend chama a **stored procedure** que cria o pedido, valida estoque e atualiza tudo via triggers.
+4. Toda alteração em pedidos gera logs e garante consistência via triggers (estoque, status, logs).
+5. O administrador visualiza pedidos e atualiza status diretamente, com a lógica de transição controlada por **funções e triggers**.
+
+***
+
+
 ### Trabalho 1
 
 Projeto de Modelagem de Banco de Dados e Implementação de Stored Procedures em PL/pgSQL
