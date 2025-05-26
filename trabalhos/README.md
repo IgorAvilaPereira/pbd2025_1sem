@@ -78,24 +78,74 @@ Altera o status de um pedido validando as transições permitidas.
 
 ### ⚡ Triggers e Funções de Apoio
 
-#### 🔹 1. Trigger: **Log de alterações em pedidos**
+### 🔹 1. **Trigger: `trg_log_alteracao`**
+
+**Função:** `log_alteracao_pedido()`
+
+* **Objetivo:** Registrar automaticamente qualquer atualização feita na tabela `pedidos`, como mudança de status, alteração no total ou horário de entrega.
+* **Por que é útil:** Cria uma trilha de auditoria no sistema sem depender do backend.
+* **Onde grava:** Tabela `logs(pedido_id, acao, data_hora)`
+
+📌 *Exemplo de log gerado:*
+
+> Pedido 103 atualizado para “em preparo” em 2025-05-26 14:03:17.
 
 ---
 
-#### 🔹 2. Trigger: **Verificação de estoque antes de inserir item**
+### 🔹 2. **Trigger: `trg_validar_estoque`**
+
+**Função:** `validar_estoque()`
+
+* **Objetivo:** Impedir a inserção de um item em um pedido se não houver estoque suficiente.
+* **Quando é executada:** Antes de um novo `item_pedido` ser inserido.
+* **Comportamento:** Se a quantidade solicitada for maior que o disponível no estoque, lança um erro e cancela a operação.
+
+📌 *Mensagem de erro possível:*
+
+> Estoque insuficiente para o item 45 (Pizza Calabresa).
 
 ---
 
+### 🔹 3. **Trigger: `trg_descontar_estoque`**
 
-#### 🔹 3. Trigger: **Atualização automática de estoque**
+**Função:** `descontar_estoque()`
+
+* **Objetivo:** Subtrair automaticamente do estoque a quantidade de cada item após ser adicionado a um pedido.
+* **Importância:** Garante que o estoque esteja sempre sincronizado com as vendas.
+* **Execução:** Após a inserção de cada linha em `itens_pedido`.
+
+🛠️ *Complementar à trigger de validação.* Primeiro valida, depois atualiza.
 
 ---
 
-#### 🔹 4. Trigger: **Validação de transição de status**
+### 🔹 4. **Trigger: `trg_validar_status`**
+
+**Função:** `validar_transicao_status()`
+
+* **Objetivo:** Impedir alterações inválidas no status de pedidos.
+* **Regras Exemplo:**
+
+  * Um pedido "entregue" não pode voltar para "em preparo".
+  * Um pedido "cancelado" não pode ser reativado.
+* **Mensagem de erro:**
+
+  > Não é possível alterar um pedido já entregue.
+
+🔐 *Ajuda a evitar erros humanos ou falhas no frontend.*
 
 ---
 
-#### 🔹 5. Trigger: **Gerar log automático de cancelamento**
+### 🔹 5. **Trigger: `trg_log_cancelamento`**
+
+**Função:** `log_cancelamento()`
+
+* **Objetivo:** Gravar um log específico sempre que um pedido for cancelado.
+* **Execução:** Após a mudança de status para `cancelado`.
+* **Comportamento adicional:** Pode ser estendida para notificar a cozinha ou o cliente, via webhook.
+
+📌 *Exemplo de log gerado:*
+
+> Pedido 201 cancelado em 2025-05-26 15:04:20.
 
 ---
 
@@ -108,7 +158,6 @@ Altera o status de um pedido validando as transições permitidas.
 5. O administrador visualiza pedidos e atualiza status diretamente, com a lógica de transição controlada por **funções e triggers**.
 
 ***
-
 
 ### Trabalho 1
 
