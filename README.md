@@ -80,7 +80,6 @@ Extras + Atendimento Trabalho
      * [(Aula 10) - Triggers (Gatilhos) em Detalhes em PostgreSQL - Com Exemplos e Implementação](https://www.youtube.com/watch?v=f-gTevkp7sg&list=PLHCyLhqWSaHDHOCJycIf4FHSU6-IMCxuN&index=29)
 [trigger.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./7_aula/trigger.pdf) <br>
 ## [./8_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./8_aula) <br>
-[lista_trigger_and_functions.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/lista_trigger_and_functions.md) <br>
 ### Triggers
 
 * INSTEAD OF: "em vez de...  "
