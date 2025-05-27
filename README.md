@@ -126,7 +126,6 @@ Continuar lista
 [transformacao-er-modelo-relacional.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./slides_importantes/transformacao-er-modelo-relacional.pdf) <br>
 [trigger.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./slides_importantes/trigger.pdf) <br>
 ## [./trabalhos](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./trabalhos) <br>
-[crongrama.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./trabalhos/crongrama.md) <br>
 ### Trabalho 2
 
 ## 🧾 Projeto: **Sistema Web de Gestão de Pedidos para Restaurante**
