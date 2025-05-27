@@ -110,6 +110,7 @@ Extras + Atendimento Trabalho
 [projeto](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/projeto) <br>
 ## [./9_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./9_aula) <br>
 [crongrama.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./9_aula/crongrama.md) <br>
+[lista_trigger_and_functions.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./9_aula/lista_trigger_and_functions.md) <br>
 [projeto.zip](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./9_aula/projeto.zip) <br>
 Continuar lista
 
