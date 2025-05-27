@@ -20,7 +20,7 @@
 
 8.  **Trigger para Atualizar Log ao Excluir Consulta:** Crie um trigger que seja disparado antes da exclusão de uma consulta na tabela `consulta`. Este trigger deve inserir na tabela `consulta_log` a data e hora da tentativa de exclusão e o nome do médico associado à consulta que está sendo excluída.
 
-9.  **Trigger para Garantir NOME em Maiúsculo:** Elabore um trigger que, antes da inserção ou atualização de um registro na tabela `medico`, converta o valor do campo `crm` para letras maiúsculas.
+9.  **Trigger para Garantir NOME em Maiúsculo:** Elabore um trigger que, antes da inserção ou atualização de um registro na tabela `medico`, converta o valor do campo `nome` para letras maiúsculas.
 
 10. **Trigger para Limitar o Número de Consultas por Dia por Médico:** Crie um trigger que impeça a inserção de uma nova consulta para um determinado médico se ele já tiver agendado mais de 5 consultas na mesma data.
 
