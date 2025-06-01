@@ -1,4 +1,6 @@
 # pbd2025_1sem <br>
+## [./10_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./10_aula) <br>
+&nbsp;
 ## [./1_introducao](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./1_introducao) <br>
 [introducao.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./1_introducao/introducao.md) <br>
 [stored_procedure.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./1_introducao/stored_procedure.pdf) <br>
