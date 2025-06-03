@@ -1,5 +1,19 @@
 # pbd2025_1sem <br>
 ## [./10_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./10_aula) <br>
+[projeto.zip](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./10_aula/projeto.zip) <br>
+* Paramos no exercício 12 (da lista sobre triggers). O exercício 12 está _pendente_
+
+* No BD, implementamos:
+ 
+  * Limite de consultas diárias por médico
+  * Auditoria dos Pacientes
+
+* No Python/FLask, implementamos:
+
+  * Adicionar Consulta
+  * Adicionar Paciente
+
+* Requisições assíncronas JS e Flask: Ficou _pendente_:
 
 ```js
  <script>
