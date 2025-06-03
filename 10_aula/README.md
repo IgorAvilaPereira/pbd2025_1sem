@@ -1,3 +1,6 @@
+**Paramos no exercício 12 (da lista sobre triggers). O exercício 12 está _pendente_
+
+**Requisições assíncronas JS e Flask: Ficou para outro dia":
 
 ```js
  <script>
