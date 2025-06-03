@@ -1,6 +1,16 @@
-**Paramos no exercício 12 (da lista sobre triggers). O exercício 12 está _pendente_
+* Paramos no exercício 12 (da lista sobre triggers). O exercício 12 está _pendente_
 
-**Requisições assíncronas JS e Flask: Ficou para outro dia":
+* No BD, implementamos:
+ 
+  * Limite de consultas diárias por médico
+  * Auditoria dos Pacientes
+
+* No FLask:
+
+  * Adicionar Consulta
+  * Adicionar Paciente
+
+* Requisições assíncronas JS e Flask: Ficou _pendente_":
 
 ```js
  <script>
