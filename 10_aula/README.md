@@ -5,12 +5,12 @@
   * Limite de consultas diárias por médico
   * Auditoria dos Pacientes
 
-* No FLask:
+* No Python/FLask, implementamos:
 
   * Adicionar Consulta
   * Adicionar Paciente
 
-* Requisições assíncronas JS e Flask: Ficou _pendente_":
+* Requisições assíncronas JS e Flask: Ficou _pendente_:
 
 ```js
  <script>
