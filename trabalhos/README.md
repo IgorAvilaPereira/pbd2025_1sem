@@ -242,3 +242,4 @@ Criar uma function que calcule a estatística de devoluções por tipo de livro,
 **Valor: 5**
 
 &nbsp;
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./trabalhos)

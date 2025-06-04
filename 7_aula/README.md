@@ -24,3 +24,4 @@
   * **Triggers:**
 
      * [(Aula 10) - Triggers (Gatilhos) em Detalhes em PostgreSQL - Com Exemplos e Implementação](https://www.youtube.com/watch?v=f-gTevkp7sg&list=PLHCyLhqWSaHDHOCJycIf4FHSU6-IMCxuN&index=29)
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./7_aula)

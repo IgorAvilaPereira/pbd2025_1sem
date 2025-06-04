@@ -77,6 +77,7 @@ def teste_pagina():
 
 
 &nbsp;
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./10_aula)
 ## [./1_introducao](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./1_introducao) <br>
 [introducao.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./1_introducao/introducao.md) <br>
 [stored_procedure.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./1_introducao/stored_procedure.pdf) <br>
@@ -86,15 +87,18 @@ def teste_pagina():
 [lista1.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./2_aula/lista1.md) <br>
 [lista1.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./2_aula/lista1.sql) <br>
 &nbsp; 
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./2_aula)
 [setup.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./2_aula/setup.md) <br>
 [david_carnaval](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./2_aula/david_carnaval) <br>
 ## [./3_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./3_aula) <br>
 [lista1_170325.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./3_aula/lista1_170325.sql) <br>
 * continuar lista 1
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./3_aula)
 [javalin_mustache_exemplo](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./3_aula/javalin_mustache_exemplo) <br>
 ## [./4_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./4_aula) <br>
 [lista1_240324.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./4_aula/lista1_240324.sql) <br>
 Fazer exercícios lista 1 (do 10 em diante)
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./4_aula)
 ## [./5_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./5_aula) <br>
 [lista1_310325.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./5_aula/lista1_310325.sql) <br>
 * Terminar [Lista 1 (>=16)](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/2_aula/lista1.md)
@@ -122,11 +126,13 @@ Na volta:
 -->
 
 &nbsp;
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./5_aula)
 ## [./6_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./6_aula) <br>
 [material_aula.zip](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./6_aula/material_aula.zip) <br>
 Extras + Atendimento Trabalho
 
 &nbsp;
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./6_aula)
 ## [./7_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./7_aula) <br>
 [aula7.sql](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./7_aula/aula7.sql) <br>
 [index.py](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./7_aula/index.py) <br>
@@ -156,6 +162,7 @@ Extras + Atendimento Trabalho
   * **Triggers:**
 
      * [(Aula 10) - Triggers (Gatilhos) em Detalhes em PostgreSQL - Com Exemplos e Implementação](https://www.youtube.com/watch?v=f-gTevkp7sg&list=PLHCyLhqWSaHDHOCJycIf4FHSU6-IMCxuN&index=29)
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./7_aula)
 [trigger.pdf](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./7_aula/trigger.pdf) <br>
 ## [./8_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./8_aula) <br>
 ### Triggers
@@ -183,6 +190,7 @@ Extras + Atendimento Trabalho
 * [Python/Tkinter](https://youtube.com/playlist?list=PLvT8P1q6jMWfdjqCvnHsTCKxofVBNBZyD)
 
 
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./8_aula)
 [materiais](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/materiais) <br>
 [projeto](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./8_aula/projeto) <br>
 ## [./9_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./9_aula) <br>
@@ -193,6 +201,7 @@ Extras + Atendimento Trabalho
 * [Trabalho 2](https://github.com/IgorAvilaPereira/pbd2025_1sem/wiki#trabalho-2)
 
 &nbsp;
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./9_aula)
 ## [./dicas](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./dicas) <br>
 [dicas.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/dicas.md) <br>
 [temp_table.png](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/temp_table.png) <br>
@@ -449,5 +458,6 @@ Criar uma function que calcule a estatística de devoluções por tipo de livro,
 **Valor: 5**
 
 &nbsp;
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./trabalhos)
 ## [./videos](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./videos) <br>
 [videos.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./videos/videos.md) <br>

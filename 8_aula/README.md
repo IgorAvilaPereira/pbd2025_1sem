@@ -23,3 +23,4 @@
 * [Python/Tkinter](https://youtube.com/playlist?list=PLvT8P1q6jMWfdjqCvnHsTCKxofVBNBZyD)
 
 
+[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./8_aula)
