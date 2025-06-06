@@ -203,6 +203,8 @@ def teste_pagina():
 &nbsp;
 [Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./10_aula)
 ## [./11_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./11_aula) <br>
+* [cronograma.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/09_aula/crongrama.md)
+
 * Paramos no exercício 12 (da lista sobre triggers). O exercício 12 está _pendente_
 
 * [lista_trigger.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/9_aula/lista_trigger_and_functions.md)
