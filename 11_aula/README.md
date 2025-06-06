@@ -1,3 +1,5 @@
+* [cronograma.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/09_aula/crongrama.md)
+
 * Paramos no exercício 12 (da lista sobre triggers). O exercício 12 está _pendente_
 
 * [lista_trigger.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/9_aula/lista_trigger_and_functions.md)
