@@ -203,13 +203,13 @@ def teste_pagina():
 &nbsp;
 [Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./10_aula)
 ## [./11_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./11_aula) <br>
-* [cronograma.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/09_aula/crongrama.md)
-
-* Paramos no exercício 12 (da lista sobre triggers). O exercício 12 está _pendente_
+* **Propor novo cronograma**
 
 * [lista_trigger.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/9_aula/lista_trigger_and_functions.md)
 
-* Requisições assíncronas JS e Flask: Ficou _pendente_:
+  * Paramos no exercício 12 (da lista sobre triggers). O exercício 12 está _pende>
+
+* Requisições assíncronas JS e Flask:
 
 ```js
  <script>
@@ -271,11 +271,57 @@ def teste_pagina():
     return render_template('teste.html')   
 ```
 
+
+```python
+   from flask import Flask, request, jsonify
+
+   app = Flask(__name__)
+
+   @app.route('/my_route', methods=['GET', 'POST'])
+   def my_route():
+       if request.method == 'GET':
+           data = request.args.get('my_param')
+           return jsonify({'message': f'Received GET request with parameter: {data}'})
+       elif request.method == 'POST':
+           data = request.get_json()
+           return jsonify({'message': f'Received POST request with JSON data: {data}'})           
+          
+      
+```
+
+```python
+from flask import request
+
+@app.post("/user/<int:id>")
+def user_update(id):
+    user = User.query.get_or_404(id)
+    user.update_from_json(request.json)
+    db.session.commit()
+    return user.to_json()
+           
+```          
+
+```javascript           
+           
+   // Example using fetch for a GET request
+   fetch('/my_route?my_param=my_value')
+       .then(response => response.json())
+       .then(data => console.log(data));
+
+    // Example using fetch for a POST request with JSON data
+   fetch('/my_route', {
+       method: 'POST',
+       headers: {
+           'Content-Type': 'application/json'
+       },
+       body: JSON.stringify({key: 'value'})
+   })
+       .then(response => response.json())
+       .then(data => console.log(data));
+ ```
+
 &nbsp;
 [Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./11_aula)
-## [./12_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./12_aula) <br>
-[Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/12_aula)
-&nbsp;
 ## [./dicas](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./dicas) <br>
 [dicas.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/dicas.md) <br>
 [temp_table.png](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/temp_table.png) <br>
