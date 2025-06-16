@@ -6,6 +6,8 @@
 
 * Requisições assíncronas JS e Flask:
 
+* **Exemplos:**
+
 ```js
  <script>
         async function teste() {
