@@ -144,7 +144,7 @@ Extras + Atendimento Trabalho
 
 * [lista_trigger.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/9_aula/lista_trigger_and_functions.md)
 
-  * Paramos no exercício 12 (da lista sobre triggers). O exercício 12 está _pende>
+  * Paramos no exercício 12 (da lista sobre triggers). O exercício 12 está __pendente__
 
 * Requisições assíncronas JS e Flask:
 
