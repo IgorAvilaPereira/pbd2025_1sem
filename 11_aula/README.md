@@ -1,4 +1,3 @@
-**Propor novo cronograma**
 
 [lista_trigger.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/9_aula/lista_trigger_and_functions.md)
 
