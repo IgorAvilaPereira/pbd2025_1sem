@@ -22,12 +22,34 @@
         <td>{{ consulta.paciente }}</td>
         <td>{{ consulta.observacao }}</td>
         <td><a class="btn btn-danger" href="/deletar_consulta/{{consulta.id}}">Deletar</a></td>
-        <td><a class="btn btn-warning" href="/consulta_tela_editar/{{consulta.id}}">Atualizar</a></td>
+        <td><a class="btn btn-warning" href="/consulta_tela_editar/{{consulta.id}}">Atualizar Observação</a></td>
+    </tr>
+    {% endfor %}
+    </tr>
+</table>
+<a class="btn btn-primary" href="/consulta_tela_adicionar">Adicionar Consulta</a>
+
+<hr>
+
+<h1>Pacientes</h1>
+
+<table class="table">
+    <tr>
+        <td>cpf</td>
+        <td>Nome</td>
+        {% for paciente in vetPaciente %}
+    <tr>
+        <td>{{ paciente.cpf }}</td>
+        <td>{{ paciente.nome }}</td>
     </tr>
     {% endfor %}
     </tr>
 </table>
 
+
+<a class="btn btn-primary" href="/paciente_tela_adicionar">Adicionar Paciente</a>
+
+<hr>
 <h1>Médicos</h1>
 
 <table class="table">
@@ -51,8 +73,5 @@
     </tr>
 </table>
 <a class="btn btn-primary" href="/medico_tela_adicionar">Adicionar Médico</a>
-<a class="btn btn-primary" href="/consulta_tela_adicionar">Adicionar Consulta</a>
-<a class="btn btn-primary" href="/paciente_tela_adicionar">Adicionar Paciente</a>
-
 
 {% endblock %}

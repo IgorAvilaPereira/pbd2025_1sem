@@ -1,4 +1,4 @@
-# PARAMOS NO 12 (PENDENTE) => 02/06/25
+# FALTOU 14 e 15 (PENDENTE) => 17/06/25
 import psycopg2
 from flask import Flask, redirect, render_template, request, url_for
 
@@ -34,11 +34,11 @@ class Medico:
 
 class Paciente:
   def __init__(self, nome = None, cpf = None, data_nascimento = None, email = None, id = 0):
-    self.cpf = cpf
     self.nome = nome
-    self.email = email
-    self.id = id
+    self.cpf = cpf    
     self.data_nascimento = data_nascimento
+    self.email = email
+    self.id = id  
 
 class Consulta:
   def __init__(self, data_hora = None, paciente = None, medico = None, observacao = None, id = 0):
@@ -136,13 +136,14 @@ class PacienteDAO:
 
   def listar_todos(self):
     vetPaciente = []
-    sql = "SELECT * FROM paciente ORDER BY id"
+    sql = "SELECT id, nome, mascaraCPF(cpf) as cpf, data_nascimento, email FROM paciente ORDER BY id"
     conn = self.conexao.abreConexao()
     cur = conn.cursor()
     cur.execute(sql)
     for registro in cur.fetchall():
-        print(registro)
+        print(registro[0])
         paciente = Paciente(registro[1], registro[2], registro[3], int(registro[0]))
+        # print(paciente)
         vetPaciente.append(paciente)
     cur.close()
     conn.close()
@@ -224,7 +225,8 @@ def index():
   medicoDAO = MedicoDAO(conexao) 
   vetMedico = medicoDAO.listar_todos()
   vetConsulta = ConsultaDAO(conexao).listar_todos()
-  return render_template("index.html", vetMedico = vetMedico, vetConsulta = vetConsulta) 
+  vetPaciente = PacienteDAO(conexao).listar_todos()
+  return render_template("index.html", vetPaciente = vetPaciente, vetMedico = vetMedico, vetConsulta = vetConsulta) 
 
 
 
