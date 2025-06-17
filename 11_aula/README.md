@@ -1,10 +1,10 @@
-* **Propor novo cronograma**
+**Propor novo cronograma**
 
-* [lista_trigger.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/9_aula/lista_trigger_and_functions.md)
+[lista_trigger.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/9_aula/lista_trigger_and_functions.md)
 
-  * Paramos no exercício 12 (da lista sobre triggers). O exercício 12 está __pendente__
+* Não fizemos o 14 e 15
 
-* Requisições assíncronas JS e Flask:
+**EXTRA: Requisições assíncronas JS e Flask:**
 
 * **Exemplos:**
 
@@ -115,7 +115,10 @@ def user_update(id):
    })
        .then(response => response.json())
        .then(data => console.log(data));
- ```
+```
 
 &nbsp;
+
 [Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./11_aula)
+
+&nbsp;
