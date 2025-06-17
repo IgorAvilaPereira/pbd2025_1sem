@@ -1,11 +1,97 @@
-/*
-    2025-05-26 22:10 @Igor
-*/
-DROP DATABASE aula7;
+DROP DATABASE IF EXISTS aula7;
 
 CREATE DATABASE aula7;
 
 \c aula7;
+
+-- https://www.geradorcpf.com/algoritmo_do_cpf.htm
+CREATE OR REPLACE FUNCTION validaCPF(character(11)) RETURNS boolean AS
+$$
+DECLARE
+    i integer;
+    somatorio integer;
+    multiplicador integer;
+    nro1 integer;
+    nro2 integer;
+BEGIN
+    IF ($1 = '00000000000' OR 
+        $1 = '11111111111' OR 
+        $1 = '22222222222' OR
+        $1 = '33333333333' OR 
+        $1 = '44444444444' OR 
+        $1 = '55555555555' OR 
+        $1 = '66666666666' OR 
+        $1 = '77777777777' OR 
+        $1 = '88888888888' OR 
+        $1 = '99999999999') THEN
+        RETURN FALSE;
+    ELSE
+        i := 1;
+        somatorio := 0;
+        multiplicador := 10;
+        WHILE (i <= 9) LOOP
+            -- RAISE NOTICE 'numero %', cast(substring($1, i, 1) as integer);
+            somatorio := somatorio + cast(substring($1, i, 1) as integer) * multiplicador;
+            -- RAISE NOTICE 'Multiplicador %', multiplicador;         
+            multiplicador := multiplicador - 1;
+            i := i + 1;
+        END LOOP;
+        
+        nro1 := somatorio % 11;
+        IF (nro1 < 2) THEN
+            IF (cast(substring($1, 10, 1) as integer) != 0) THEN
+                RETURN FALSE;
+            END IF; 
+        ELSIF ((11 - nro1) != cast(substring($1, 10, 1) as integer)) THEN
+            RETURN FALSE;            
+        END IF;
+        
+        i := 1;
+        somatorio := 0;
+        multiplicador := 11;
+        WHILE (i <= 10) LOOP
+            -- RAISE NOTICE 'numero %', cast(substring($1, i, 1) as integer);
+            somatorio := somatorio + cast(substring($1, i, 1) as integer) * multiplicador;
+            -- RAISE NOTICE 'Multiplicador %', multiplicador;         
+            multiplicador := multiplicador - 1;
+            i := i + 1;
+        END LOOP;
+        
+        nro2 := somatorio % 11;
+        IF (nro2 < 2) THEN
+            IF (cast(substring($1, 11, 1) as integer) != 0) THEN
+                RETURN FALSE;
+            END IF; 
+        ELSIF ((11 - nro2) != cast(substring($1, 11, 1) as integer)) THEN
+            RETURN FALSE;            
+        END IF;        
+        -- RAISE NOTICE 'Somatorio %', somatorio;         
+        RETURN TRUE;
+    END IF;
+END;
+$$ LANGUAGE 'plpgsql';
+
+CREATE OR REPLACE FUNCTION mascaraCPF(character(11)) RETURNS text AS
+$$
+BEGIN
+    RETURN substring($1, 1, 3) || '.' || substring($1, 4, 3) || '.' || substring($1, 7, 3) || '-' || substring($1, 10, 2);
+END;
+$$ LANGUAGE 'plpgsql';
+
+CREATE TABLE cliente (
+    id serial primary key,
+    nome character varying (100) not null,
+    cpf character(11) check(validaCPF(cpf) is TRUE),
+    telefone character varying(12),
+    rua text,
+    bairro text,
+    numero text,
+    complemento text,
+    cep character(8),
+    ativo boolean default true,
+    unique(cpf)
+);
+
 
 CREATE TABLE medico (
     id serial primary key,
@@ -18,10 +104,11 @@ INSERT INTO medico (crm, nome) VALUES ('12345', 'Dr. David');
 CREATE TABLE paciente (
     id serial primary key,
     nome character varying(100) not null,
-    cpf character(11) unique,
-    data_nascimento date
+    cpf character(11) check(validaCPF(cpf) is TRUE),
+    data_nascimento date,
+    unique(cpf)
 );
-INSERT INTO paciente (nome, cpf, data_nascimento) VALUES ('RONALDO', '11111111111', '2001-12-07');
+INSERT INTO paciente (nome, cpf, data_nascimento) VALUES ('RONALDO', '17658586072', '2001-12-07');
 
 CREATE TABLE consulta (
     id serial primary key,
@@ -61,7 +148,9 @@ ALTER TABLE paciente ADD COLUMN email TEXT;
 CREATE OR REPLACE FUNCTION notificacao_function() RETURNS TRIGGER AS
 $$
 BEGIN
-    INSERT INTO notificacoes_pendentes (destinatario, assunto, mensagem) values (NEW.email, 'BOAS VINDAS', 'MEU ENTRASSE AQUI!');
+    IF (NEW.email IS NOT NULL) THEN
+        INSERT INTO notificacoes_pendentes (destinatario, assunto, mensagem) values (NEW.email, 'BOAS VINDAS', 'MEU ENTRASSE AQUI!');
+    END IF;
     RETURN NEW;
 END;
 $$ LANGUAGE 'plpgsql';
