@@ -141,13 +141,13 @@ Extras + Atendimento Trabalho
 [Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./10_aula)
 ## [./11_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./11_aula) <br>
 [novo_cronograma.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./11_aula/novo_cronograma.md) <br>
-* **Propor novo cronograma**
+**Propor novo cronograma**
 
-* [lista_trigger.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/9_aula/lista_trigger_and_functions.md)
+[lista_trigger.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/9_aula/lista_trigger_and_functions.md)
 
-  * Paramos no exercício 12 (da lista sobre triggers). O exercício 12 está __pendente__
+* Não fizemos o 14 e 15
 
-* Requisições assíncronas JS e Flask:
+**EXTRA: Requisições assíncronas JS e Flask:**
 
 * **Exemplos:**
 
@@ -258,10 +258,13 @@ def user_update(id):
    })
        .then(response => response.json())
        .then(data => console.log(data));
- ```
+```
 
 &nbsp;
+
 [Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./11_aula)
+
+&nbsp;
 [projeto](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./11_aula/projeto) <br>
 ## [./dicas](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./dicas) <br>
 [dicas.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./dicas/dicas.md) <br>
