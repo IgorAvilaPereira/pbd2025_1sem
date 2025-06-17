@@ -41,6 +41,45 @@ CREATE TABLE paciente_audit (
 
 );
 
+CREATE TABLE consulta_historico_observacoes (
+    id serial primary key,
+    consulta_id integer references consulta (id) ON DELETE CASCADE, 
+    data_hora timestamp default current_timestamp, 
+    observacao text
+);
+
+CREATE TABLE notificacoes_pendentes (
+    id serial primary key, 
+    destinatario text not null, 
+    assunto text not null, 
+    mensagem text not null, 
+    data_criacao timestamp default current_timestamp
+);
+
+ALTER TABLE paciente ADD COLUMN email TEXT;
+
+CREATE OR REPLACE FUNCTION notificacao_function() RETURNS TRIGGER AS
+$$
+BEGIN
+    INSERT INTO notificacoes_pendentes (destinatario, assunto, mensagem) values (NEW.email, 'BOAS VINDAS', 'MEU ENTRASSE AQUI!');
+    RETURN NEW;
+END;
+$$ LANGUAGE 'plpgsql';
+
+CREATE TRIGGER notificacao_function_gatilho AFTER INSERT ON paciente FOR EACH 
+ROW EXECUTE PROCEDURE notificacao_function();
+
+CREATE OR REPLACE FUNCTION registra_consulta_observacao() RETURNS TRIGGER AS
+$$
+BEGIN
+    INSERT INTO consulta_historico_observacoes (consulta_id, observacao) VALUES (NEW.id, NEW.observacao);
+    RETURN NEW;
+END;
+$$ LANGUAGE 'plpgsql';
+
+CREATE TRIGGER registra_consulta_observacao_gatilho AFTER INSERT OR UPDATE ON consulta FOR EACH 
+ROW EXECUTE PROCEDURE registra_consulta_observacao();
+
 CREATE OR REPLACE FUNCTION paciente_audit_function() RETURNS TRIGGER AS
 $$
 DECLARE

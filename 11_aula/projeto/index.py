@@ -33,17 +33,19 @@ class Medico:
     self.id = id
 
 class Paciente:
-  def __init__(self, nome = None, cpf = None, data_nascimento = None, id = 0):
+  def __init__(self, nome = None, cpf = None, data_nascimento = None, email = None, id = 0):
     self.cpf = cpf
     self.nome = nome
+    self.email = email
     self.id = id
     self.data_nascimento = data_nascimento
 
 class Consulta:
-  def __init__(self, data_hora = None, paciente = None, medico = None, id = 0):
+  def __init__(self, data_hora = None, paciente = None, medico = None, observacao = None, id = 0):
     self.data_hora = data_hora
     self.paciente = paciente
     self.medico = medico
+    self.observacao = observacao
     self.id = id
 
 class MedicoDAO:  
@@ -108,7 +110,7 @@ class MedicoDAO:
     cur = conn.cursor()
     cur.execute(sql)
     for registro in cur.fetchall():
-        print(registro)
+        # print(registro)
         medico = Medico(registro[2], registro[1], registro[0])
         vetMedico.append(medico)
     cur.close()
@@ -123,7 +125,7 @@ class PacienteDAO:
     try:
       conn = self.conexao.abreConexao()
       cur = conn.cursor()
-      cur.execute("INSERT INTO paciente (cpf, nome, data_nascimento) VALUES (%s, %s, %s);", [paciente.cpf, paciente.nome, paciente.data_nascimento])
+      cur.execute("INSERT INTO paciente (cpf, nome, data_nascimento, email) VALUES (%s, %s, %s, %s);", [paciente.cpf, paciente.nome, paciente.data_nascimento, paciente.email])
       conn.commit()
       cur.close()
       conn.close()
@@ -160,12 +162,25 @@ class PacienteDAO:
 class ConsultaDAO:
   def __init__(self, conexao):
     self.conexao = conexao
+  
+  def listar_todos(self):
+    vetConsulta = []
+    sql = "SELECT consulta.id, to_char(data_hora, 'DD/MM/YYYY HH:MM'), medico.nome, paciente.nome, observacao FROM consulta INNER JOIN medico ON (consulta.medico_id = medico.id) INNER JOIN paciente on (paciente.id = consulta.paciente_id) ORDER BY id"
+    conn = self.conexao.abreConexao()
+    cur = conn.cursor()
+    cur.execute(sql)
+    for registro in cur.fetchall():
+        consulta = Consulta(registro[1], registro[3], registro[2], registro[4] if registro[4] != None else "", int(registro[0]))
+        vetConsulta.append(consulta)
+    cur.close()
+    conn.close()
+    return vetConsulta
 
   def adicionar(self, consulta):
     try:
       conn = self.conexao.abreConexao()
       cur = conn.cursor()
-      cur.execute("INSERT INTO consulta (data_hora, paciente_id, medico_id) VALUES (%s, %s, %s);", [consulta.data_hora, consulta.paciente.id, consulta.medico.id])
+      cur.execute("INSERT INTO consulta (data_hora, paciente_id, medico_id, observacao) VALUES (%s, %s, %s, %s);", [consulta.data_hora, consulta.paciente.id, consulta.medico.id, consulta.observacao])
       conn.commit()
       cur.close()
       conn.close()
@@ -174,21 +189,58 @@ class ConsultaDAO:
       print(e)
       return False
   
+  def deletar_consulta(self, id):
+    try:
+      conn = self.conexao.abreConexao()
+      cur = conn.cursor()
+      cur.execute("DELETE FROM consulta WHERE id = %s", [int(id)])
+      conn.commit()
+      cur.close()
+      conn.close()
+      print("feito!")
+      return True
+    except Exception as e:
+      print(e)
+      return False
+    
+  def atualiza_observacao(self, id, observacao):
+    try:
+      conn = self.conexao.abreConexao()
+      cur = conn.cursor()
+      cur.execute("UPDATE consulta SET observacao = %s WHERE id = %s", [observacao, int(id)])
+      conn.commit()
+      cur.close()
+      conn.close()
+      return True
+    except Exception as e:
+      print(e)
+      return False
+
+  
 #  flask --app index run
 @app.route("/")
 def index():
   conexao = ConexaoPostgreSQL()
   medicoDAO = MedicoDAO(conexao) 
   vetMedico = medicoDAO.listar_todos()
-  return render_template("index.html", vetMedico = vetMedico) 
+  vetConsulta = ConsultaDAO(conexao).listar_todos()
+  return render_template("index.html", vetMedico = vetMedico, vetConsulta = vetConsulta) 
+
+
 
 @app.route("/deletar_medico/<int:id>")
 def deletar_medico(id):
-  # print("ok"+str(id))
   conexao = ConexaoPostgreSQL()
   medicoDAO = MedicoDAO(conexao) 
   resultado = medicoDAO.deletar_medico(id)
-  print(resultado)
+  return redirect(url_for('index'))
+
+@app.route("/deletar_consulta/<int:id>")
+def deletar_consulta(id):
+  # print(id)
+  conexao = ConexaoPostgreSQL()
+  resultado =  ConsultaDAO(conexao).deletar_consulta(id)
+  # print(resultado)
   return redirect(url_for('index'))
 
 @app.route("/medico_tela_adicionar")
@@ -213,6 +265,11 @@ def medico_tela_editar(id):
   medico = medicoDAO.obter(id)
   return render_template("medico_tela_editar.html", medico=medico)
 
+
+@app.route("/consulta_tela_editar/<int:id>")
+def consulta_tela_editar(id):
+  return render_template("consulta_tela_editar.html", consulta_id=id)
+
 def erro(msg):
   return render_template("erro.html", msg=msg)
 
@@ -221,6 +278,7 @@ def erro(msg):
 def consulta_adicionar():
   consulta = Consulta()
   consulta.data_hora = request.form['data_hora']
+  consulta.observacao = request.form['observacao']
   consulta.paciente = PacienteDAO(ConexaoPostgreSQL()).obter(int(request.form['paciente_id']))
   consulta.medico = MedicoDAO(ConexaoPostgreSQL()).obter(int(request.form['medico_id']))
   resultado = ConsultaDAO(ConexaoPostgreSQL()).adicionar(consulta)
@@ -249,6 +307,7 @@ def paciente_adicionar():
   paciente.cpf = request.form['cpf']
   paciente.nome = request.form['nome']
   paciente.data_nascimento = request.form['data_nascimento']  
+  paciente.email = request.form['email']
   resultado = PacienteDAO(ConexaoPostgreSQL()).adicionar(paciente)
   if (resultado is True): 
     return redirect(url_for('index'))
@@ -265,4 +324,14 @@ def medico_editar():
   conexao = ConexaoPostgreSQL()
   medicoDAO = MedicoDAO(conexao) 
   resultado = medicoDAO.editar(medico)
+  return redirect(url_for('index'))
+
+
+
+@app.route("/consulta_editar", methods = ['POST'])
+def consulta_editar():
+  consulta_id = int(request.form['id'])
+  observacao = request.form['observacao']
+  conexao = ConexaoPostgreSQL()
+  resultado = ConsultaDAO(conexao).atualiza_observacao(consulta_id, observacao)
   return redirect(url_for('index'))
