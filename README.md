@@ -141,7 +141,6 @@ Extras + Atendimento Trabalho
 [Baixar todo o material da aula](https://download-directory.github.io/?url=http://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./10_aula)
 ## [./11_aula](https://github.com/IgorAvilaPereira/pbd2025_1sem/tree/main/./11_aula) <br>
 [novo_cronograma.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/./11_aula/novo_cronograma.md) <br>
-**Propor novo cronograma**
 
 [lista_trigger.md](https://github.com/IgorAvilaPereira/pbd2025_1sem/blob/main/9_aula/lista_trigger_and_functions.md)
 
