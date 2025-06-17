@@ -121,7 +121,7 @@ DECLARE
     qtde integer := 0;
 BEGIN
     SELECT count(*) INTO qtde FROM consulta WHERE consulta.medico_id = NEW.medico_id AND cast(data_hora as date) = CAST(NEW.data_hora AS DATE);
-    RAISE NOTICE '%', qtde;
+--    RAISE NOTICE '%', qtde;
    
     IF (qtde >= 5) THEN
         RAISE EXCEPTION 'Atingiu limite máximo diário';
@@ -162,7 +162,7 @@ $$ LANGUAGE 'plpgsql';
 CREATE OR REPLACE FUNCTION deletar_medico() RETURNS TRIGGER AS
 $$
 BEGIN
-    RAISE NOTICE '%',  OLD.id;
+--    RAISE NOTICE '%',  OLD.id;
     DELETE FROM consulta WHERE medico_id = OLD.id;
     RETURN OLD;
 END;
