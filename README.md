@@ -210,7 +210,6 @@ def teste_pagina():
     return render_template('teste.html')   
 ```
 
-
 ```python
    from flask import Flask, request, jsonify
 
